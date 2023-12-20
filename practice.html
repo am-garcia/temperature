@@ -5,16 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/practice.css">
 </head>
 
 <body>
-    <h1>JavaScript</h1>
+    <header class="site-header">
+        <h1>JavaScript</h1>
+        <p id="notifications">the notifications</p>
+    </header>
 
-    <button onclick="sum();">Sum</button>
+
+    <!-- <button onclick="sum();">Sum</button>
     <button onclick="sub();">Sub</button>
 
 
-    <h2 id="results"></h2>
+    <h2 id="results"></h2> -->
+    <div class="login">
+        <input type="email" placeholder="Enter your username" id="txtUserName">
+        <input type="password" placeholder="Enter your password" id="txtPassword">
+        <button onclick="login();">Login</button>
+    </div>
+
+    <div>
+        <h2>Students</h2>
+        <!-- add a value (input) and display the value-->
+        <input type="text" id="txtStudent" placeholder="add a new student">
+        <button onclick="register();">Add</button>
+
+        <ul id="studentsList">
+
+        </ul>
+    </div>
+
 
     <script src="./scripts/practice2.js"></script>
 
